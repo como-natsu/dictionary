@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DictionaryController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/',[DictionaryController::class,'index']);
+Route::get('/register',[DictionaryController::class,'register']);
+Route::post('/register',[DictionaryController::class,'store']);
+Route::patch('/dictionary/update',[DictionaryController::class,'update']);
+Route::delete('/delete',[DictionaryController::class,'destroy']);
+Route::get('/search',[DictionaryController::class,'search']);
+

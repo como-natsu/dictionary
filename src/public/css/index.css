@@ -1,0 +1,128 @@
+
+.dictionary-keyword {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.search-form__item {
+    width: 70%;
+}
+
+.search-form__item-input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 3px;
+}
+
+.search-form__button {
+    width: 30%;
+    display: flex;
+}
+
+.search-form__button-submit {
+    padding: 5px;
+    width: 50%;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 3px;
+    background: #e4e4e4;
+    color: #000000;
+    cursor: pointer;
+}
+
+.dictionary-table {
+    margin: 30px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.dictionary-table__inner {
+    width: 100%;
+}
+
+
+
+.update-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-form__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    gap:  10px;
+}
+
+.update-form__item-time {
+    width: 10%;
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.update-form__item-input {
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.update-form__item-textarea {
+    width: 60%;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    resize: none;
+    appearance: none;
+    overflow-y: hidden;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-break: strict;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.update-form__button {
+    width: 50px;
+}
+
+.update-form__button-submit {
+    padding: 5px;
+    width: 100%;
+    border: solid 1px;
+    border-radius: 3px;
+    background: #e4e4e4;
+    color: #000000;
+    cursor: pointer;
+}
+
+.delete-form__button {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.delete-form__button-submit {
+    padding: 5px;
+    width: 100%;
+    border: solid 1px;
+    border-radius: 3px;
+    background: #e4e4e4;
+    color: #000000;
+    cursor: pointer; }
