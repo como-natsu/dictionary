@@ -44,10 +44,10 @@
             <form class="register-form" action="/register" method="post">
                 @csrf
                 <div class="register-form__item">
-                    <input class="register-form__item-input" type="text" name="keyword" placeholder="キーワード">
+                    <input class="register-form__item-input" type="text" name="keyword" placeholder="キーワード" value="{{ old('keyword') }}">
                 </div>
                 <div class="register-form__item">
-                    <textarea class="register-form__item-textarea" name="description" placeholder="説明"></textarea>
+                    <textarea class="register-form__item-textarea" name="description" placeholder="説明">{{ old('description') }}</textarea>
                 </div>
                 <div class="register-form__button">
                     <button class="register-form__button-submit" type="submit">登録</button>
