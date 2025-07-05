@@ -17,13 +17,27 @@ Laravelを使用し作成した辞書アプリです。
 - Docker 28.0.1
 - Docker Compose v2.33.1
 
+## 環境設定について
+このプロジェクトでは以下の2つの `.env` ファイルを使用しています。
+
+1. **プロジェクトルートの `.env`**
+    Dockerビルド時の環境変数（UID/GIDなど）を設定します。
+    例: UID=1000
+        GID=1000
+※このファイルは `docker-compose.yml` と同じ階層に配置してください。
+
+2. **`src` フォルダ内の `.env`**
+Laravelの環境設定ファイルです。
+`src/.env.example` をコピーして作成し、データベース接続情報などを編集してください。
+
+
 ## インストール方法
 
 1. リポジトリをクローン
-2. composer install を実行
-3. `.env.example`をコピーして`.env`を作成
-4. `php artisan key:generate`を実行
-5. `.env`ファイルにデータベース情報などを設定
-6. `php artisan migrate`を実行
-7. ブラウザで `http://localhost` にアクセスして動作確認
-
+2. プロジェクトルートに `.env` ファイルを作成し、`UID` と `GID` を設定
+3. `src/.env.example` をコピーして `src/.env` を作成し、Laravel用環境変数を編集
+4. `docker-compose up -d --build` を実行
+5. Dockerコンテナ内で `composer install` を実行
+6. Dockerコンテナ内で `php artisan key:generate` を実行
+7. Dockerコンテナ内で `php artisan migrate` を実行
+8. ブラウザで `http://localhost` にアクセスして動作確認
