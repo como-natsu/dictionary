@@ -18,7 +18,7 @@ class Dictionary extends Model
     {
         if(!empty($keyword)){
             $query->where(function($q) use ($keyword) {
-                $q->where('keyword','like','%'.$keyword.'%')->orWhere('description','lile','%'.$keyword.'%');
+                $q->where('keyword','like','%'.$keyword.'%')->orWhere('description','like','%'.$keyword.'%');
 
             });
         }

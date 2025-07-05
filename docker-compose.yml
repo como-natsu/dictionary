@@ -13,10 +13,10 @@ services:
 
     php:
         build:
-          context: ./docker/php
-          args:
-            UID: ${UID}
-            GID: ${GID}
+            context: ./docker/php
+            args:
+                UID: ${UID}
+                GID: ${GID}
         volumes:
             - ./src:/var/www/
 
