@@ -14,6 +14,8 @@ Laravelを使用し作成した辞書アプリです。
 - PHP 7.4.9
 - Laravel 8.83.29
 - MySQL
+- Docker 28.0.1
+- Docker Compose v2.33.1
 
 ## インストール方法
 
@@ -23,4 +25,5 @@ Laravelを使用し作成した辞書アプリです。
 4. `php artisan key:generate`を実行
 5. `.env`ファイルにデータベース情報などを設定
 6. `php artisan migrate`を実行
+7. ブラウザで `http://localhost` にアクセスして動作確認
 
